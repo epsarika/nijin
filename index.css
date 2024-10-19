@@ -1,0 +1,79 @@
+body, html {
+    height: 100%; 
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.container {
+    margin: 200px 200px;
+}
+
+span {
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+.work {
+    color: #000000;
+    text-decoration: underline;
+}
+img {
+    filter: invert(1);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000000;
+        color: rgba(255, 255, 255, 0.75);
+    }
+    
+    span {
+        color: #ffffff;
+    }
+    a {
+        color: rgba(255, 255, 255, 0.75);
+    }
+    a:hover {
+        color: #ffffff;
+    }
+    .work {
+        color: #ffffff;
+    }
+    img {
+        filter: invert(0);
+    }
+
+}
+@media (max-width: 767px) {
+    body {
+        font-size: 16px; 
+    }
+    .container {
+        margin: 50px 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+    .container {
+        margin: 75px 30px;
+    }
+}
+
